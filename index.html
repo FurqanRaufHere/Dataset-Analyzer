@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <i class="fas fa-database header-icon"></i>
+                <h1>Dataset Analyzer</h1>
+                <p>Upload your dataset and ask intelligent questions</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- File Upload Section -->
+            <section class="upload-section" id="uploadSection">
+                <div class="upload-card">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <h2>Upload Your Dataset</h2>
+                    <p>Supported formats: CSV, Excel, JSON</p>
+                    <div class="file-drop-area" id="fileDropArea">
+                        <input type="file" id="fileInput" accept=".csv,.xlsx,.json" hidden>
+                        <div class="file-drop-content">
+                            <i class="fas fa-file-upload"></i>
+                            <p>Drag & drop your file here or click to browse</p>
+                            <button class="browse-btn" onclick="document.getElementById('fileInput').click()">
+                                Browse Files
+                            </button>
+                        </div>
+                    </div>
+                    <div class="file-info" id="fileInfo" style="display: none;">
+                        <div class="file-details">
+                            <i class="fas fa-file"></i>
+                            <span id="fileName"></span>
+                            <button class="remove-btn" onclick="removeFile()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chat Interface Section (Initially Hidden) -->
+            <section class="chat-section" id="chatSection" style="display: none;">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h3>Ask Questions About Your Dataset</h3>
+                        <button class="new-dataset-btn" onclick="resetApp()">
+                            <i class="fas fa-plus"></i> New Dataset
+                        </button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                id="questionInput" 
+                                placeholder="Ask a question about your dataset..." 
+                                onkeypress="handleKeyPress(event)"
+                            >
+                            <button class="send-btn" onclick="sendQuestion()">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>Processing your request...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
