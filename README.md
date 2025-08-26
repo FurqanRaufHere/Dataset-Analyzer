@@ -30,7 +30,7 @@ A modern, elegant web application for analyzing datasets with AI-powered questio
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/FurqanRaufHere/Dataset-Analyzer.git
 cd dataset-analyzer
 ```
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 3. Set up your Groq API key:
    - Create a `.env` file in the root directory
-   - Add your Groq API key: `GROQ_API_KEY=your_api_key_here`
+   - Add your Groq API key: `API_KEY=your_api_key_here`
 
 4. Run the application:
 ```bash
@@ -73,23 +73,7 @@ python app.py
 
 ## Project Structure
 
-```
-dataset-analyzer/
-├── app.py                 # Flask application
-├── requirements.txt       # Python dependencies
-├── index.html            # Main frontend interface
-├── style.css             # Styling
-├── app.js                # Frontend JavaScript
-├── README.md             # This file
-├── .gitignore           # Git ignore rules
-├── src/
-│   ├── __init__.py
-│   ├── dataset_loader.py # Dataset loading utilities
-│   ├── groq_client.py    # Groq API integration
-│   └── qa_engine.py     # Question answering engine
-├── uploads/              # Uploaded files (gitignored)
-└── dataset/              # Virtual environment (gitignored)
-```
+
 
 ## Environment Variables
 
