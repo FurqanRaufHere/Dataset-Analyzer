@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dataset Analyzer
 
 A modern, elegant web application for analyzing datasets with AI-powered question answering capabilities. Upload your datasets and ask intelligent questions to gain insights.
@@ -116,3 +117,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Flask framework
 - Font Awesome for icons
 - Pandas for data manipulation
+=======
+# Dataset-Analyzer
+>>>>>>> 724f60e8ea694744048e936959eaec5a9926e9af
