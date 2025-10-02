@@ -90,16 +90,3 @@ GROQ_API_KEY=your_groq_api_key_here
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Groq for AI API services
-- Flask framework
-- Font Awesome for icons
-- Pandas for data manipulation
-=======
-# Dataset-Analyzer
->>>>>>> 724f60e8ea694744048e936959eaec5a9926e9af
