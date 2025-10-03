@@ -58,7 +58,7 @@ python app.py
 
 ## Supported File Formats
 
-- CSV (.csv)
+- CSV (.csv )
 - Excel (.xlsx, .xls)
 - JSON (.json)
 
