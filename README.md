@@ -1,6 +1,6 @@
 # Dataset Analyzer
 
-A modern, elegant web application for analyzing datasets with AI-powered question answering capabilities. Upload your datasets and ask intelligent questions to gain insights.
+A modern, elegant web application for analyzing datasets with AI-powered question-answering capabilities. Upload your datasets and ask intelligent questions to gain insights.
 
 ## Features
 
